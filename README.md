@@ -4,11 +4,17 @@
 
 ### I worked with Lucio Yang and Manfred Tan at CS Dojo
 I received help with drawing the snapshot references from Mr.Holmes
-after school. I worked with Lucio and Manfred to review hw77
+after school. This was were the majority of the thinking happened.
+I also worked with Lucio and Manfred to review hw77
 and the classwork from Friday 2019-06-07 to better understand
 how to do the code in English so it would be easier to code at
 home.
 
+This list may omit sources common to everyone in the course, including...
+
+Piazza threads
+class-wide discussions
+communication with Holmes via the class web site or GitHub repos.
 
 ## Holmes's remarks
 
