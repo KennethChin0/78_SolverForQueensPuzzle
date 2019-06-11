@@ -1,20 +1,13 @@
 # represent a solver for the queens problem
 
-## [your name here]'s remarks
+## Kenneth Chin's remarks
 
-### citations / worked with / received help from
-Replace this paragraph with a solid accounting of your sources.
-People have become either lackadaisical or dishonest
-about crediting others for ideas and help. 
-If I grade this work, I will rely on this section as
-a complete listing for judging academic honesty.
-
-This list may omit sources common to everyone in the course,
-including...
-* Piazza threads
-* class-wide discussions
-* communication with Holmes via the class
-web site or GitHub repos.
+### I worked with Lucio Yang and Manfred Tan at CS Dojo
+I received help with drawing the snapshot references from Mr.Holmes
+after school. I worked with Lucio and Manfred to review hw77
+and the classwork from Friday 2019-06-07 to better understand
+how to do the code in English so it would be easier to code at
+home.
 
 
 ## Holmes's remarks
