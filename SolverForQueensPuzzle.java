@@ -59,20 +59,43 @@ public class SolverForQueensPuzzle {
     private void recordSolutionsStarted() {
 
         // Which has been requested, a base case or recursive case?
-            // your code here
-            // action(s) for base case(s)
-            System.out.println( "  for debugging: base case detected for..."
-                              + System.lineSeparator()
-                              + inProgress
-                              );
 
-            // action for recursive cases
-            // your code here
-            System.out.println( "  for debugging: recursive case detected for..."
-                              + System.lineSeparator()
-                              + inProgress
-                              );
+        if (inProgress.lastIsNg() == true) {
+          // System.out.println( "  for debugging: base case detected for..."
+          //                   + System.lineSeparator()
+          //                   + inProgress
+          //                   );
+
+          nBoardsConsidered++;
+          return;
+      }
+            else if (inProgress.accept() == true) {
+            // action(s) for base case(s)
+            solutions.add(new BoardForQueensPuzzle(inProgress));
+
+            nBoardsConsidered++;
+          }
+            // System.out.println( "  for debugging: base case detected for..."
+            //                   + System.lineSeparator()
+            //                   + inProgress
+            //                   );
+
+
+
+          // action for recursive cases
+          else {
+            // System.out.println( "  for debugging: recursive case detected for..."
+            //                   + System.lineSeparator()
+            //                   + inProgress
+            //                   );
+            for (int file = 0; file <inProgress.ranks(); file++) {
+              inProgress.populate(file);
+              recordSolutionsStarted();
+              inProgress.depopulate();
+            }
+
     }
+  }
 
 
     // --------- skeletal code below here needs no modification ---------
