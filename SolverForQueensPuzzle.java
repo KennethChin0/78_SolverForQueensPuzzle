@@ -60,16 +60,15 @@ public class SolverForQueensPuzzle {
 
         // Which has been requested, a base case or recursive case?
 
-        if (inProgress.lastIsNg() == true) {
+        if (inProgress.lastIsNg()) {
           // System.out.println( "  for debugging: base case detected for..."
           //                   + System.lineSeparator()
           //                   + inProgress
           //                   );
 
           nBoardsConsidered++;
-          return;
       }
-            else if (inProgress.accept() == true) {
+            else if (inProgress.accept()) {
             // action(s) for base case(s)
             solutions.add(new BoardForQueensPuzzle(inProgress));
 
@@ -89,9 +88,10 @@ public class SolverForQueensPuzzle {
             //                   + inProgress
             //                   );
             for (int file = 0; file <inProgress.ranks(); file++) {
+              BoardForQueensPuzzle tempBoard = new BoardForQueensPuzzle(inProgress);
               inProgress.populate(file);
               recordSolutionsStarted();
-              inProgress.depopulate();
+              inProgress = tempBoard;
             }
 
     }
